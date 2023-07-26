@@ -1,0 +1,341 @@
+/* svg */
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    background: rgba(135, 206, 250, 0.39);
+}
+.container {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+/* Top */
+.tophead{
+    padding: 0.5% 0% 0% 0%;
+}
+.para{
+    text-transform:uppercase;
+    color: rgba(245, 245, 245, 0.903);
+}
+.phoneicone{
+    color: white;
+    font-size: small;
+    margin-left: 1%;
+}
+
+/* Navbar */
+.header_wrapper .navbar {
+    padding:15px 0;
+    margin-top: 2%;
+}
+
+.header_wrapper .navbar-toggler {
+    border: 0;
+    color: black;
+    line-height:2;
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 10px;
+}
+
+.header_wrapper .nav-item .nav-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    display:inline-block;
+}
+
+.header_wrapper .nav-item .nav-link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:orangered;
+    transition: 0.3s;
+    bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+.logo{
+    margin-left: 150%;
+}
+/* end */
+.buttonfree{
+    background: rgb(233, 171, 57);
+    border: none;
+    border-radius: 5px;
+}
+.trfree{
+    font-size: small;
+    color: black;
+}
+
+.scheader{
+    padding-left: 12.5%;
+    margin-top: 7%;
+}
+.bookbtn{
+  text-decoration: none;
+  color: white;
+  background: rgb(85, 171, 204);
+  padding: 2% 2% 2% 2%;
+  border-radius: 5px;
+  font-size: small;
+  margin-top: 10%;
+}
+.bookbtntwo{
+  text-decoration: none;
+  color: white;
+  padding: 2% 2% 2% 2%;
+  border-radius: 5px;
+  font-size: small;
+  margin-top: 5%;
+  border: 1px solid white;
+  margin-left: 1%;
+}
+.bookbtntwo:hover{
+    background: rgb(85, 171, 204);
+    border: none;
+    color: white;
+}
+.imgsection{
+    margin-top: 5%;
+    transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    filter: grayscale(1) brightness(1);
+}
+.imgsection:hover{
+    
+    cursor: pointer;
+    transition: 0.3s linear;
+    transform: translateY(-20px);
+    filter: none;
+}
+/* patner section */
+.patnerh1{
+    font-weight: 400;
+    font-size:2rem;
+    margin-top: 7%;
+}
+
+.owl-carousel .owl-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .card {
+    padding: 0% 0% 0% 5%;
+    width: 120%;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow-y: auto !important;
+    padding-bottom: 60px;
+}
+
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+	max-width: 90px;
+    position: absolute;
+    margin-left: 70%;
+    border-radius: 50px;
+    border: 2px solid orangered;
+    margin-top:-9%;
+}
+
+.owl-carousel .owl-item .card {
+    opacity: 0.2;
+    transform: scale3d(0.8, 0.8, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item.active.center .card {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 20px;
+    background: black !important;
+    border-radius: 50px !important;
+    opacity: 0.8;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    height: 13px;
+    width: 13px;
+    opacity: 1;
+    transform: translateY(2px);
+    background: black !important;
+    
+}
+
+@media(min-width: 480.6px) and (max-width: 575.5px) {
+    .owl-carousel .owl-item .card .name {
+        left: 24%;
+    }
+}
+
+@media(max-width: 360px) {
+    .owl-carousel .owl-item .card .name {
+        left: 30%;
+    }
+}
+.buttonlearnmore{
+    margin-left: 43%;
+    margin-top: 3%;
+    background: #152238;
+    color: white;
+    padding: 0.5% 1% 0.5% 1%;
+    border-radius: 5px;
+}
+/* footer */
+.dec{
+    white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.footerh1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+}
+.quicklinks{
+    list-style: none;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: -9%;
+}
+.footerbtn{
+    text-transform: uppercase;
+    padding: 2% 2% 2% 2%;
+    color: rgb(83, 199, 245);
+    background: none;
+    border: 1px solid skyblue;
+    font-size: 1rem;
+}
+
+/* Styles for screens smaller than 768 pixels */
+@media (max-width: 767px) {
+    .example {
+      background: green;
+    }
+    svg {
+        background: rgba(135, 206, 250, 0.39);
+        height: 100vh;
+        width: 100%;
+    }
+    .navbar-toggler{
+        color: white;
+        background: white;
+    }
+    #navbarNav{
+        background: black;
+        padding: 2% 2% 2% 2%;
+    }
+    .logo{
+        margin-left: -2%;
+    }
+    .scheader{
+        margin-top: 15%;
+    }
+    .bookbtntwo{
+        display: none;
+    }
+    .innerimg{
+        width: 100%;
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+    .buttonlearnmore{
+        margin-left: 18%;
+        margin-top: 5%;
+    }
+    .fa-square-twitter{
+        margin-bottom: 5%;
+    }
+    
+    .owl-carousel .owl-item .card {
+        padding: 0% 0% 0% 5%;
+        width: 100%;
+        margin-left: -2%;
+    }
+    .owl-carousel .owl-stage-outer {
+        padding-bottom: 100px;
+    }
+    
+    
+  }
+  
+  /* Styles for screens between 768 and 991 pixels */
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+    .example {
+      background: blue;
+    }
+    .navbar-toggler{
+        color: white;
+        background: white;
+    }
+    #navbarNav{
+        background: black;
+        padding: 2% 2% 2% 2%;
+        z-index: 1;
+    }
+    .logo{
+        margin-left: 80%;
+    }
+    .innerimg{
+        width: 100%;
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+    .bookbtntwo{
+        display: none;
+    }
+    .patnerh1{
+        margin-top: 40%;
+    }
+    .buttonlearnmore{
+        margin-left: 37%;
+        margin-top: 5%;
+    }
+    .footerh1{
+        font-size: 0.9rem;
+    }
+  }
+  
+  /* Styles for screens larger than 992 pixels */
+  @media (min-width: 992px) {
+  
+    .example {
+      background: red;
+    }
+  }
